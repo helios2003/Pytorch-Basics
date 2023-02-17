@@ -1,2 +1,2 @@
 # Pytorch-Basics
-Adding code for performing various ML and DLtasks using Pytorch
+Adding code for performing various ML and DL tasks using Pytorch
