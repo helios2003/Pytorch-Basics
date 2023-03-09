@@ -37,7 +37,3 @@ for epoch in range(n_iters):
     optimizer.zero_grad() #for setting gradients to zero after each iteration
     [w, b] = model.parameters()
     print(w[0][0].item(), model(X_test).item())
-
-    
-
-

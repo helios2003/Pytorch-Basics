@@ -69,7 +69,3 @@ with torch.no_grad(): #so that it isn't the part of any computational graph
     y_predicted_cls = y_predicted.round()
     accuracy = y_predicted_cls.eq(y_test).sum()/float(y_test.shape[0])
     print(f'accuracy:{accuracy}')
-
-
-
-

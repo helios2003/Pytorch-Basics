@@ -34,4 +34,3 @@ for epoch in range(n_iters):
 
 #print(f'prediction after traiing')
 
-
