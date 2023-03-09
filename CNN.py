@@ -46,8 +46,8 @@ class ConvNet(nn.Module):
     def forward(self, x):
         x = self.pool(F.relu(self.conv1(x)))
         x = self.pool(F.relu(self.conv2(x)))
+        # flattedned tensor for an ANN task
         x = x.view(-1, 16*5*5) 
-        # tensor to be flattenned
         #x = x.view(-1, 6*5*5)
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
